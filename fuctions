@@ -1,0 +1,37 @@
+    ######### Simple Function:#######
+#Create a function named greet_with_time that takes a name as input and prints a greeting message along with the current time.
+from datetime import datetime 
+def greet_with_time(name):
+    date_with_time=datetime.now()
+    print(name,"at the time",date_with_time)
+greet_with_time("noorulain")
+greet_with_time("i love to write code")
+    ###########Function with Multiple Parameters:##########
+#Write a function called calculate_average that takes three numbers as input and returns their average.
+def calculate_average(a,b,c):
+    sum=a+b+c
+    average=sum/3
+    print("average of these numbers is:",average)
+n=int(input("enter a number:"))
+n1=int(input("enter a number:"))
+n2=int(input("entera number"))
+calculate_average(n,n1,n2)
+   ########Default Argument:############
+#Define a function calculate_discount that takes a price and a discount percentage as input. Set a default discount percentage of 10%.
+def calculate_discount(price,dis_per):
+    discount=price*dis_per/100
+    price_with_dis=price-discount
+    print("your actual price after discount is",price_with_dis)
+price=int(input("enter price of product:"))
+discount=int(input("enter discount percentage"))    
+calculate_discount(price,discount)  
+   ############Keyword Arguments:########3
+#Create a function print_info that takes a name, age, and city as keyword arguments.
+def info(name,age,city):
+    print(name,age,city)
+n="noorulain"
+a=19
+c="raiwind"
+info(n,a,c)
+
+        
