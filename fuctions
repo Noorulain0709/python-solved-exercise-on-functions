@@ -23,9 +23,28 @@ def calculate_discount(price,dis_per):
     price_with_dis=price-discount
     print("your actual price after discount is",price_with_dis)
 price=int(input("enter price of product:"))
+   #############Variable-Length Arguments:####33
+######Write a function find_max that can take any number of arguments and returns the maximum value.¶
+def find_max(a,b,c):
+    print(max("maximum value is",a,b,c))
+n=int(input("enter a number"))
+n1=int(input("enter an number"))
+n2=int(input("enter a number"))
+find_max(n,n1,n2)
+        #########Recursive Function:##########
+#Implement a recursive function to calculate the factorial of a number.
+def fact(n):
+    if n==1:
+        return 1
+    else:    
+        fact_f=n*fact(n-1)
+        return (fact_f)
+a=int(input("enter a number"))
+result=fact(a)
+print("the factorial of ",a,"is",result)
 discount=int(input("enter discount percentage"))    
 calculate_discount(price,discount)  
-   ############Keyword Arguments:########3
+   ############Keyword Arguments:########
 #Create a function print_info that takes a name, age, and city as keyword arguments.
 def info(name,age,city):
     print(name,age,city)
@@ -33,5 +52,13 @@ n="noorulain"
 a=19
 c="raiwind"
 info(n,a,c)
-
+       #########Lambda Functions:
+#Create a lambda function to square a number.
+def lambda_fun(n):
+    square_num= n*n
+    return square_num
+a=int(input("enter a number"))
+lambda_fun(a)
+square_num= a*a
+print('square_num',square_num)
         
